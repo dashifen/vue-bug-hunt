@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "name": "wp-plugin-gu-cfm",
+  "description": "Not a stand-up fight; sorry, Bill Paxton.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgetown-university/wp-plugin-gu-cfm.git"
+  },
+  "author": "Georgetown UIS Web Services <webservices@georgetown.edu>",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0",
+    "axios": "^0.21",
+    "css-loader": "^5.2",
+    "file-loader": "^6.0",
+    "mini-css-extract-plugin": "^1.6",
+    "vue": "^3.0",
+    "vue-loader": "^16.2",
+    "webpack": "^5.38",
+    "webpack-cli": "^4.7"
+  },
+  "scripts": {
+    "watch": "webpack --env development --watch",
+    "build": "webpack --env production"
+  }
+}
