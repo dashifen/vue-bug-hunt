@@ -1,14 +1,13 @@
 const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
-const filename = 'bug-hunter.js';
 
 module.exports = (env = {production: false}) => ({
   mode: env.production ? 'production' : 'development',
   devtool: env.production ? 'source-map' : 'eval-cheap-module-source-map',
-  entry: path.resolve(__dirname, './assets/scripts/' + filename),
+  entry: path.resolve(__dirname, './assets/scripts/bug-hunter.js'),
   output: {
     path: path.resolve(__dirname, './assets'),
-    filename: filename,
+    filename: 'bug-hunter.min.js',
     publicPath: '/assets/'
   },
   resolve: {
