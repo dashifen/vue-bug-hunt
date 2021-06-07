@@ -1,11 +1,17 @@
 <template>
   <h1>{{ greeting }}, world!</h1>
+  <p>&copy {{ year }}</p>
 </template>
 
 <script>
 export default {
   name: "bug-hunter",
-  props: ['greeting']
+  props: ['greeting'],
+  data() {
+    return {
+      year: new Date().getFullYear()
+    }
+  }
 };
 </script>
 
