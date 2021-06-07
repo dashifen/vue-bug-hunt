@@ -4,7 +4,7 @@ import BugHunter from './components/bug-hunter.vue';
 document.addEventListener('DOMContentLoaded', () => {
   const bugHunterEl = document.querySelector('bug-hunter');
   if (bugHunterEl) {
-    createApp(BugHunter).mount(bugHunterEl)
+    createApp(BugHunter, { greeting: bugHunterEl.dataset.greeting }).mount('bug-hunter')
   } else {
     console.log('bug-hunter not found');
   }
